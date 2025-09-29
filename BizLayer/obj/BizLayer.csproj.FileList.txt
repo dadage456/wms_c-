@@ -1,0 +1,7 @@
+bin\Debug\BizLayer.dll
+bin\Debug\BizLayer.pdb
+bin\Debug\Entity.dll
+bin\Debug\Entity.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BizLayer.dll
+obj\Debug\BizLayer.pdb

@@ -1,0 +1,119 @@
+// **************************************************************************
+// TypeAdapterGenerator
+// **************************************************************************
+
+class OutTaskItemAdapter extends TypeAdapter<OutTaskItem> {
+  @override
+  final int typeId = 1;
+
+  @override
+  OutTaskItem read(BinaryReader reader) {
+    final numOfFields = reader.readByte();
+    final fields = <int, dynamic>{
+      for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
+    };
+    return OutTaskItem(
+      outtaskitemid: fields[0] as String,
+      matcode: fields[1] as String,
+      matname: fields[2] as String,
+      storesiteno: fields[3] as String,
+      batchno: fields[4] as String,
+      sn: fields[5] as String,
+      erpStoreroom: fields[6] as String,
+      orderno: fields[7] as String,
+      matinnercode: fields[8] as String,
+      hintqty: fields[9] as double,
+      collectedqty: fields[10] as double,
+    );
+  }
+
+  @override
+  void write(BinaryWriter writer, OutTaskItem obj) {
+    writer
+      ..writeByte(11)
+      ..writeByte(0)
+      ..write(obj.outtaskitemid)
+      ..writeByte(1)
+      ..write(obj.matcode)
+      ..writeByte(2)
+      ..write(obj.matname)
+      ..writeByte(3)
+      ..write(obj.storesiteno)
+      ..writeByte(4)
+      ..write(obj.batchno)
+      ..writeByte(5)
+      ..write(obj.sn)
+      ..writeByte(6)
+      ..write(obj.erpStoreroom)
+      ..writeByte(7)
+      ..write(obj.orderno)
+      ..writeByte(8)
+      ..write(obj.matinnercode)
+      ..writeByte(9)
+      ..write(obj.hintqty)
+      ..writeByte(10)
+      ..write(obj.collectedqty);
+  }
+
+  @override
+  int get hashCode => typeId.hashCode;
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is OutTaskItemAdapter &&
+          runtimeType == other.runtimeType &&
+          typeId == other.typeId;
+}
+
+class CollectRecordAdapter extends TypeAdapter<CollectRecord> {
+  @override
+  final int typeId = 2;
+
+  @override
+  CollectRecord read(BinaryReader reader) {
+    final numOfFields = reader.readByte();
+    final fields = <int, dynamic>{
+      for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
+    };
+    return CollectRecord(
+      matcode: fields[0] as String,
+      storesiteno: fields[1] as String,
+      batchno: fields[2] as String,
+      sn: fields[3] as String,
+      qty: fields[4] as double,
+      erpStoreroom: fields[5] as String,
+      outtaskitemid: fields[6] as String,
+    );
+  }
+
+  @override
+  void write(BinaryWriter writer, CollectRecord obj) {
+    writer
+      ..writeByte(7)
+      ..writeByte(0)
+      ..write(obj.matcode)
+      ..writeByte(1)
+      ..write(obj.storesiteno)
+      ..writeByte(2)
+      ..write(obj.batchno)
+      ..writeByte(3)
+      ..write(obj.sn)
+      ..writeByte(4)
+      ..write(obj.qty)
+      ..writeByte(5)
+      ..write(obj.erpStoreroom)
+      ..writeByte(6)
+      ..write(obj.outtaskitemid);
+  }
+
+  @override
+  int get hashCode => typeId.hashCode;
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is CollectRecordAdapter &&
+          runtimeType == other.runtimeType &&
+          typeId == other.typeId;
+}

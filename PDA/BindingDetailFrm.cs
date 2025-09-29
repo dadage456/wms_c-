@@ -1,0 +1,958 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using Entity;
+using BizLayer;
+using PDA;
+using BizLayer.WebService;
+
+namespace PDA
+{
+    public partial class BindingDetailFrm : Form
+    {
+        public BindingDetailFrm(string taskNo, string roomCode, string taskComment)
+        {
+            InitializeComponent();
+            this.taskNo = taskNo;
+            storeRoom = roomCode;
+            this.taskComment = taskComment;
+        }
+        #region 变量
+        private string taskComment;
+        private string taskNo;
+        string storeRoom = string.Empty; 
+        Step currStep;
+        Management management = Management.GetSingleton(); 
+        MiddleService service = new MiddleService();
+        //List<BindingTray> totalStocks = new List<BindingTray>();
+        DataTable siteTable = new DataTable();
+        string trayNo = string.Empty;
+        string matCode = string.Empty;
+        string sn = string.Empty;
+        string batchNo = string.Empty;
+        string storeSite = string.Empty;
+        string supplier = string.Empty;//供应商
+        decimal collectQty = 0;     //采集数量 
+        decimal trayCapacity = 0;   //剩余容量
+        decimal currentWeight = 0;//当前总承重
+        decimal currentCapacity = 0; //当前总容积
+        string matControlFlag = string.Empty;               //物料编码控制
+        Dictionary<string, List<string>> dicMtlQty = new Dictionary<string, List<string>>();//key: intaskitemid value: 0:开始采集数  1：本次数量
+        Dictionary<string, string> dicTryNoMtl = new Dictionary<string, string>();//存储托盘物料明细
+        Dictionary<string, List<string>> dicMtlWeight = new Dictionary<string, List<string>>();//存储物料的容量 //第一位 承重 第二位容积
+        bool boCheckMtl = true;//是否检查物料
+        Dictionary<string, string> dicSeq = new Dictionary<string, string>();
+        decimal mtlCapacity = 0;//物料容量
+        decimal mtlWeight = 0;//物料承重
+        #endregion
+
+        /// <summary>
+        /// 初始化
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BindingDetailFrm_Load(object sender, EventArgs e)
+        { 
+            try
+            {
+                BindingTrayCollectData.Instance.Collect = new List<BindingTray>();
+                boCheckMtl = service.GetIsCheckMtl();//检查物料
+
+                lblMsg.Text = "请扫描托盘号：";
+                tbxBarcode.Text = "";
+                tbxBarcode.Focus();
+                qtyLabel.Text = "";
+
+                //根据任务号获取任务明细
+                this.detailListView.Columns.Clear();
+                detailListView.Columns.Add("物料号", 120, HorizontalAlignment.Center);
+                detailListView.Columns.Add("库位", 120, HorizontalAlignment.Center);
+                detailListView.Columns.Add("任务数", 70, HorizontalAlignment.Center);
+                detailListView.Columns.Add("已采数", 70, HorizontalAlignment.Center);
+                detailListView.Columns.Add("批号", 140, HorizontalAlignment.Center);
+                detailListView.Columns.Add("序列号", 100, HorizontalAlignment.Center);
+                detailListView.Columns.Add("库房", 100, HorizontalAlignment.Center);
+                detailListView.Columns.Add("ERP子库", 90, HorizontalAlignment.Center);
+                detailListView.Columns.Add("intaskitemid", 0, HorizontalAlignment.Center);//
+                detailListView.Columns.Add("parno", 0, HorizontalAlignment.Center);//
+                DataSet ds = service.GetInTaskItem(taskNo, taskComment);
+                DataTable dt = ds.Tables[0];
+                supplier = string.Empty;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    if (string.IsNullOrEmpty(supplier))
+                    {
+                        supplier = dr[9].ToString();
+                    }
+                    detailListView.Items.Add(new ListViewItem(
+                    new string[] { dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), dr[7].ToString(), dr[8].ToString(), dr[9].ToString() }));
+                }
+
+               
+                currStep = Step.TrayNo;
+                tbxBarcode.Focus();
+            }
+            catch (Exception ex)
+            {
+                Message.Alarm("提示", ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 扫描条码
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbxBarcode_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (e.KeyCode == Keys.Return)
+                {
+                    string barcode = this.tbxBarcode.Text.Trim();
+                    if (barcode == "")
+                    {
+                        this.tbxBarcode.Text = "";
+                        this.tbxBarcode.Focus();
+                        this.tbxBarcode.SelectAll();
+                        return;
+                    }
+
+                    PerformingBarcode(barcode);
+                    this.tbxBarcode.Text = "";
+                    this.tbxBarcode.Focus();
+                    this.tbxBarcode.SelectAll();
+                }
+            }
+            catch (Exception ex)
+            {
+                Message.Alarm("提示", ex.Message);
+                this.tbxBarcode.Focus();
+                this.tbxBarcode.SelectAll();
+            }
+        }
+
+        /// <summary>
+        /// 处理采集信息
+        /// </summary>
+        /// <param name="barcode"></param>
+        private void PerformingBarcode(string barcode)
+        {
+            if (string.IsNullOrEmpty(barcode)) throw new Exception("采集内容不能为空");
+
+            #region  判断模式
+            if (barcode.IndexOf('*') > 0)
+            {
+                currStep = Step._2DBarcode;
+            }
+            //如需要可修改库位放开即可 柏磊
+            //else if (barcode.StartsWith("$KW$"))//采集库位信息优先 
+            //{
+            //    currStep = Step.Site;
+            //}
+            else if (barcode.StartsWith("$TP$"))//采集托盘信息
+            {
+                if (trayNo.Equals(string.Empty))
+                {
+                    currStep = Step.TrayNo;
+                }
+                else
+                {
+                    DialogResult r1 = MessageBox.Show("更换托盘之前扫描的数据将清空，是否继续？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+                    if (r1 == DialogResult.Yes)
+                    {
+                        if (barcode.Substring(4).Equals(trayNo))
+                        {
+                            throw new Exception("扫描的托盘号与当前装载的一样，请确认");
+                        }
+
+                        initialTaryInfo();
+                        currStep = Step.TrayNo;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+            }
+            else if ((management.CheckQuantity(barcode)))//数量
+            {
+                currStep = Step.Quantity;
+            }
+            else
+            {
+                throw new Exception(setMsg("采集内容不合法,"));
+            }
+            #endregion
+
+            #region 处理逻辑
+            switch (currStep)
+            {
+                //库位
+                case Step.Site:
+                    CheckSite(barcode.Substring(4));
+                    storeSite = barcode.Substring(4);
+                    siteLabel.Text = storeSite;
+                    break;
+                //托盘
+                case Step.TrayNo:
+                    decimal  decTrayCapacity = CheckTray(barcode.Substring(4));// "" 、 TP 、 000002
+                    trayCapacity = decTrayCapacity;
+                    lbTrayCapacity.Text = trayCapacity.ToString();
+                    currentCapacity = 0;
+                    currentWeight = 0;
+                    trayNo = barcode.Substring(4);
+                    trayLabel.Text = trayNo;
+                    break;
+                case Step._2DBarcode:
+                    BarcodeContent barcodeContent = service.AnalysisForNewBarcode(barcode);
+                    decimal decMtlCapacity=0;
+                    decimal decMtlWeight=0;
+                    //根据物料属性判断，该物料对应的编码控制    0单件(序列)控制，1批次控制，2无控制
+                    int matControl = service.GetMatControl(barcodeContent.MatCode, out decMtlCapacity, out decMtlWeight);
+                    CheckMat(barcodeContent.MatCode,  matControl.ToString(), barcodeContent.SN);
+
+                    if (!supplier.Equals(barcodeContent.AagentCode))
+                    {
+                        throw new Exception(string.Format("凭证号对应的供应商代码【{0}】与当前物料供应商代码【{1}】不一致，请确认", supplier,barcodeContent.AagentCode));
+                    }
+
+                    if (matControl == 0)
+                    {
+                        if (dicSeq.ContainsKey(barcodeContent.SN))
+                        {
+                            matCode = string.Empty;
+                            throw new Exception(string.Format("序列号【{0}】不允许重复采集，请确认", barcodeContent.SN));
+                        }
+
+                        batchNo = string.Empty;
+                        batchNoLabel.Text = batchNo;
+                        collectQty = 1;
+                        qtyLabel.Text = "1";
+                        sn = barcodeContent.SN;
+                        serialNoLabel.Text = sn;
+                    }
+                    else if (matControl == 1)
+                    {
+                        sn = string.Empty;
+                        serialNoLabel.Text = sn;
+                        batchNo = barcodeContent.SN;
+                        batchNoLabel.Text = batchNo;
+                    }
+                    else
+                    {
+                        throw new Exception("物料【" + barcodeContent.MatCode + "】编码控制维护值维护不合法");
+                    }
+                    matControlFlag = matControl.ToString();
+                    matCode = barcodeContent.MatCode;
+                    matCodeLabel.Text = matCode;
+                    mtlCapacity = decMtlCapacity;
+                    mtlWeight = decMtlWeight;
+                   
+                    break;
+                case Step.Quantity:
+                    if (!sn.Equals(string.Empty))
+                    {
+                        throw new Exception("已采集序列号无需采集数量，请扫描库位");
+                    }
+                    collectQty = Convert.ToDecimal(barcode);
+                    qtyLabel.Text = barcode;
+                    break;
+                default:
+                    break;
+            }
+
+            string strMsg = setMsg("");
+            //表示条码都扫描完毕
+            if (strMsg.Trim().Equals(""))
+            {
+                DealQuantity(Convert.ToDecimal(qtyLabel.Text.Trim()), matControlFlag);
+                InitializeCollect();
+            }
+            lblMsg.Text = setMsg("");
+            #endregion
+
+            #region 旧逻辑
+            ////采集库位信息优先
+            //if (barcode.StartsWith("$KW$"))
+            //{
+            //    CheckSite(barcode.Substring(4));
+            //    storeSite = barcode.Substring(4);
+            //    siteLabel.Text = storeSite;
+            //    return;
+            //}
+
+            //switch (currStep)
+            //{
+            //    case Step.TrayNo:
+            //        if (barcode.IndexOf('$') < 0) throw new Exception("托盘条码不合法");
+            //        string[] sArry = barcode.Split('$');    // "" 、 TP 、 000002
+            //        if (sArry[1] != "TP") throw new Exception("托盘条码不合法");
+            //        trayNo = sArry[2];
+            //        CheckTray(trayNo);
+            //        trayLabel.Text = trayNo;
+            //        currStep = Step._2DBarcode;
+            //        lblMsg.Text = "请采集二维码：";
+            //        break;
+            //    case Step._2DBarcode:
+            //        if (barcode.IndexOf('*') < 0) throw new Exception("采集内容不合法，请采集二维码");
+            //        BarcodeContent barcodeContent = service.AnalysisForNewBarcode(barcode);
+            //        matCode = barcodeContent.MatCode;
+            //        matCodeLabel.Text = matCode;
+            //        CheckMat(matCode);
+
+            //        //根据物料属性判断，该物料对应的编码控制    0单件(序列)控制，1批次控制，2无控制
+            //        int matControl = service.GetMatControl(matCode);
+            //        matControlFlag = matControl.ToString();
+            //        if (matControl == 0)
+            //        {
+            //            sn = barcodeContent.SN;
+            //            serialNoLabel.Text = sn;
+            //        }
+            //        else if (matControl == 1)
+            //        {
+            //            batchNo = barcodeContent.SN;
+            //            batchNoLabel.Text = batchNo;
+            //        }
+            //        else
+            //        {
+            //            throw new Exception("物料" + matCode + "编码控制维护值维护不合法");
+            //        }
+
+            //        currStep = Step.Quantity;
+            //        lblMsg.Text = "请采集数量：";
+
+            //        break;
+            //    case Step.Quantity:
+            //        if (string.IsNullOrEmpty(storeSite))
+            //            if (!management.CheckQuantity(barcode)) throw new Exception("采集数量不合法");
+            //        collectQty = Convert.ToDecimal(barcode);
+            //        DealQuantity(barcode, matControlFlag);
+            //        currStep = Step._2DBarcode;
+            //        lblMsg.Text = "请扫描二维码：";
+            //        qtyLabel.Text = barcode;
+            //        InitializeCollect();
+            //        break;
+            //    default:
+            //        break;
+            //} 
+            #endregion
+        }
+
+        /// <summary>
+        /// 重新扫描托盘时初始化界面
+        /// </summary>
+        private void initialTaryInfo()
+        {
+            if (dicTryNoMtl.Count == 0) return;
+
+            string itemId = string.Empty;
+            for (int i = 0; i < detailListView.Items.Count; i++)
+            {
+                itemId = detailListView.Items[i].SubItems[8].Text.Trim();
+                if (dicMtlQty.ContainsKey(itemId))
+                {
+                    detailListView.Items[i].SubItems[3].Text = dicMtlQty[itemId][0];
+                }
+            }
+
+            BindingTrayCollectData.Instance.Collect = new List<BindingTray>();
+            dicMtlQty = new Dictionary<string, List<string>>();//key: intaskitemid value: 0:开始采集数  1：本次数量
+            dicTryNoMtl = new Dictionary<string, string>();//存储托盘物料明细
+            tbxBarcode.Text = "";
+            tbxBarcode.Focus();
+            matCodeLabel.Text = "";
+            batchNoLabel.Text = "";
+            serialNoLabel.Text = "";
+            qtyLabel.Text = "";
+            matCode = string.Empty;
+            batchNo = string.Empty;
+            sn = string.Empty;
+            lblMsg.Text = setMsg("");
+        }
+
+        /// <summary>
+        /// 设定提示信息
+        /// </summary>
+        /// <param name="msg"></param>
+        private string setMsg(string msg)
+        {
+            if (trayLabel.Text.Trim().Equals(""))//托盘为空 
+            {
+                return string.Format("{0}请扫描托盘", msg);
+            }
+            else if (serialNoLabel.Text.Trim().Equals("") && batchNoLabel.Text.Trim().Equals(""))//条码为空 采集条码
+            {
+                return string.Format("{0}请扫描二维码", msg);
+            }
+            else if (!serialNoLabel.Text.Trim().Equals(""))//序列不为空  扫描还是二维码
+            {
+                return string.Format("{0}", msg);
+            }
+            else if (qtyLabel.Text.Trim().Equals(""))//肯定是批次  如数量为空
+            {
+                return string.Format("{0}请输入数量", msg);
+            }
+            else
+            {
+                return string.Format("{0}", msg);
+            }
+
+        }
+
+        /// <summary>
+        /// 校验采集库位
+        /// </summary>
+        /// <param name="storeSite"></param>
+        private void CheckSite(string site)
+        {
+            if (string.IsNullOrEmpty(site)) throw new Exception("库位号不能为空");
+            DataTable siteTable = service.GetStoreSiteByRoom(storeRoom, site).Tables[0];    //根据库房获取该库房下的所有库位
+            DataRow[] siteDr = siteTable.Select("storesiteno= '" + site + "'");
+            if (siteDr.Length <= 0) throw new Exception("库房" + storeRoom + "下无库位号" + site);
+        }
+
+        /// <summary>
+        /// 校验托盘号
+        /// </summary>
+        /// <param name="trayNo"></param>
+        private decimal CheckTray(string trayNo)
+        {
+            if (string.IsNullOrEmpty(trayNo)) throw new Exception("托盘号不能为空");
+            return service.CheckBindingTray(trayNo);
+        }
+
+        /// <summary>
+        /// 校验物料
+        /// </summary>
+        /// <param name="barcode"></param>
+        /// <param name="matControl"></param>
+        /// <param name="sn"></param>
+        private void CheckMat(string barcode, string matControl, string sn)
+        {
+            for (int i = 0; i < detailListView.Items.Count; i++)
+            {
+                string tmpMat = detailListView.Items[i].SubItems[0].Text.Trim();
+                if (matControl.Equals("0"))//0单件(序列)控制，1批次控制，2无控制
+                {
+                    //序列只检查物料
+                    //string tmpSn = detailListView.Items[i].SubItems[5].Text.Trim();//序列
+                    if (tmpMat.Equals(barcode))// && tmpSn.Equals(sn))
+                    {
+                        return;
+                    }
+                }
+                else if (matControl.Equals("1"))
+                {
+                    string tmpBatch = detailListView.Items[i].SubItems[4].Text.Trim();
+                    if (tmpMat.Equals(barcode) && tmpBatch.Equals(sn))
+                    {
+                        return;
+                    }
+                }
+            }
+            if (matControl.Equals("0"))//0单件(序列)控制，1批次控制，2无控制
+            {
+                //throw new Exception("任务明细中物料【" + barcode + "】序号【" + sn + "】的物料不存在");
+                throw new Exception("任务明细中物料【" + barcode + "】不存在");
+            }
+            else
+            {
+                throw new Exception("任务明细中物料【" + barcode + "】批号【" + sn + "】的物料不存在");
+            }
+        }
+
+        /// <summary>
+        /// 回填数量，更新LISTVIEW;添加采集记录集
+        /// </summary>
+        /// <param name="barcode"></param>
+        private void DealQuantity(decimal qty, string matFlag)
+        {
+            #region 变量及校验
+            if (string.IsNullOrEmpty(matControlFlag)) throw new Exception("获取物料编码属性失败");
+            if (qty <= 0) throw new Exception("采集数量必须大于0");
+           
+            if (!dicMtlWeight.ContainsKey(matCode))
+            {
+                dicMtlWeight.Add(matCode, new List<string>());
+                dicMtlWeight[matCode].Add(mtlWeight.ToString());
+                dicMtlWeight[matCode].Add(mtlCapacity.ToString ());
+            }
+
+            if (mtlCapacity * qty > trayCapacity)
+            {
+                throw new Exception(string.Format("物料【{0}】容量大于托盘剩余容量", mtlCapacity * qty));
+            }
+
+            bool exsitFlag = false;
+            decimal taskQty = 0;
+            decimal tmpQty = 0;
+            if (Convert.ToInt16(matFlag) == 2)  //0单件(序列)控制，1批次控制，2无控制
+            {
+                throw new Exception("物料" + matCode + "编码控制维护值维护不合法");
+            }
+
+            //托盘明细校验
+            string strInfo = string.Empty;
+            if (boCheckMtl)//表示校验物料
+            {
+                strInfo = matCode;
+            }
+             
+            //if (matFlag == "0")//序列管控
+            //{
+            //    strInfo = strInfo + supplier;//组盘按物料+供应商区分 供应商在之前校验过了
+            //}
+            if (matFlag == "1")//批次管控
+            {
+                strInfo = strInfo + batchNo;//组盘按物料+批次区分
+            }
+            strInfo = strInfo.Trim();
+            if (dicTryNoMtl.ContainsKey(trayNo))
+            {
+                if (!dicTryNoMtl[trayNo].Equals(strInfo))
+                {
+                    if (boCheckMtl)//表示校验物料
+                    {
+                        if (matFlag == "0")//序列管控
+                            throw new Exception(string.Format("扫描物料【{0}】与托盘【{1}】物料不一致", matCode, trayNo));
+                        else
+                            throw new Exception(string.Format("扫描物料【{0}】批号【{1}】与托盘【{2}】物料批号不一致", matCode, batchNo, trayNo));
+                    }
+                    else
+                    {
+                        throw new Exception(string.Format("扫描批号【{0}】与托盘【{1}】扫描物料批号不一致", batchNo, trayNo));
+                    }
+                }
+            }
+
+            #endregion
+
+            #region 统计当前物料总扫描数和总计划数
+            decimal tatalTaskQty = 0;//当前物料总计划数
+            decimal tatalTmpQty = 0;//当前物料总扫描数
+            for (int i = 0; i < detailListView.Items.Count; i++)
+            {
+                string tmpMat = detailListView.Items[i].SubItems[0].Text.Trim();//物料
+                if (tmpMat != matCode) continue;//如果物料不是当前输入的物料 继续
+                //if (Convert.ToInt16(matFlag) == 0)//序列管控
+                //{
+                //2016 3 11 从洋  序列模式 只校验物料
+                //string tmpSn = detailListView.Items[i].SubItems[5].Text.Trim();//序列
+                //if (tmpSn != sn) continue;//如果物料序列跟当前输入不一致 继续
+                //}
+                if (Convert.ToInt16(matFlag) == 1)//批次管控
+                {
+                    string tmpBatch = detailListView.Items[i].SubItems[4].Text.Trim();
+                    if (tmpBatch != batchNo) continue;//如果物料批次跟当前输入不一致 继续
+                }
+                taskQty = Convert.ToDecimal(detailListView.Items[i].SubItems[2].Text.Trim());
+                tmpQty = Convert.ToDecimal(detailListView.Items[i].SubItems[3].Text.Trim());
+                tatalTaskQty += taskQty;
+                tatalTmpQty += tmpQty;
+            }
+            #endregion
+
+            #region 校验数量是否足够
+            if ((tatalTmpQty + qty) > tatalTaskQty)
+                throw new Exception(string.Format("本次采集数量【{0}】大于剩余可采集数量【{1}】", qty,tatalTaskQty - tatalTmpQty));
+            #endregion
+
+            #region 处理逻辑
+            decimal decQty = qty;
+            List<string> ls = new List<string>();
+            string inTaskItemid = string.Empty;
+            Dictionary<string, List<decimal>> dicMtlOperatin = new Dictionary<string, List<decimal>>();
+            for (int i = 0; i < detailListView.Items.Count; i++)
+            {
+                #region  校验
+                if (decQty <= 0) break;
+                string tmpMat = detailListView.Items[i].SubItems[0].Text.Trim();//物料
+                taskQty = Convert.ToDecimal(detailListView.Items[i].SubItems[2].Text.Trim());
+                tmpQty = Convert.ToDecimal(detailListView.Items[i].SubItems[3].Text.Trim());
+
+                if (tmpMat != matCode) continue;//如果物料不是当前输入的物料 继续
+                if (taskQty == tmpQty) continue;
+                if (matFlag.Equals("1"))
+                {
+                    string tmpBatch = detailListView.Items[i].SubItems[4].Text.Trim();
+                    if (tmpBatch != batchNo) continue;
+                }
+                #endregion
+
+                #region 处理明细 已扫描数
+                inTaskItemid = detailListView.Items[i].SubItems[8].Text.Trim();
+                dicMtlOperatin.Add(inTaskItemid, new List<decimal>());
+                dicMtlOperatin[inTaskItemid].Add(taskQty);//第一笔存物料计划数
+
+                if (!dicMtlQty.ContainsKey(inTaskItemid))
+                {
+                    ls = new List<string>();
+                    ls.Add(tmpQty.ToString());
+                    ls.Add("0");
+                    ls.Add(tmpMat);
+                    dicMtlQty.Add(inTaskItemid, ls);
+                }
+
+                if ((taskQty - tmpQty) >= decQty)//表示足够扣
+                {
+                    detailListView.Items[i].SubItems[3].Text = Convert.ToString(tmpQty + decQty);
+                    dicMtlQty[inTaskItemid][1] = (tmpQty + decQty).ToString();
+                    dicMtlOperatin[inTaskItemid].Add(decQty);
+                    decQty = 0;
+                    exsitFlag = true;
+
+                }
+                else
+                {
+                    decQty = decQty - (taskQty - tmpQty);//本次扫描数量- 计划剩余数量
+                    detailListView.Items[i].SubItems[3].Text = taskQty.ToString();
+                    dicMtlQty[inTaskItemid][1] = taskQty.ToString();
+                    dicMtlOperatin[inTaskItemid].Add(taskQty - tmpQty);
+                }
+                #endregion
+            }
+            #endregion
+
+            if (!exsitFlag) throw new Exception("采集物料批号序列号信息匹配任务明细失败");
+
+            trayCapacity -= mtlCapacity * qty;
+            currentCapacity += mtlCapacity * qty;//当前容积增加
+            currentWeight += mtlWeight * qty;//当前体积增加
+            lbTrayCapacity.Text = trayCapacity.ToString();
+
+            if (!string.IsNullOrEmpty(sn) && !dicSeq.ContainsKey(sn))
+            {
+                dicSeq.Add(sn, sn);
+            }
+
+            if (!dicTryNoMtl.ContainsKey(trayNo))
+            {
+                dicTryNoMtl.Add(trayNo, strInfo);
+            }
+            //添加采集记录;对于采集记录的修改操作统一在采集明细中操作 
+            BindingTrayCollectData.Instance.AddCollectData(matCode, batchNo, sn, collectQty, storeSite, trayNo, dicMtlOperatin);
+        }
+
+        /// <summary>
+        /// 重新初始采集 
+        /// </summary>
+        private void InitializeCollect()
+        {
+            tbxBarcode.Text = "";
+            tbxBarcode.Focus();
+
+            matCodeLabel.Text = "";
+            batchNoLabel.Text = "";
+            serialNoLabel.Text = "";
+            qtyLabel.Text = "";
+
+            matCode = string.Empty;
+            batchNo = string.Empty;
+            sn = string.Empty;
+        }
+
+        /// <summary>
+        /// 上架提交获取目标库位
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void submitUpButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                #region 校验
+                beforeCommit(true);
+
+                string filter = string.Empty;
+                foreach (string value in dicSeq.Values)
+                {
+                    filter += ",'" + value + "'";
+                }
+                if (!filter.Equals(string.Empty))
+                {
+                    filter = filter.Remove(0, 1);
+                }
+                #endregion
+
+                #region 组托盘数据
+                BindingTrayInfo[] trayInfos = new BindingTrayInfo[BindingTrayCollectData.Instance.Collect.Count];   //托盘内货物信息
+                int i = 0;
+                foreach (BindingTray tray in BindingTrayCollectData.Instance.Collect)
+                {
+                    BindingTrayInfo trayInfo = new BindingTrayInfo();  
+                    trayInfo.BatchNo = tray.BatchNo;
+                    trayInfo.Sn = tray.Sn;
+                    trayInfo.MatCode = tray.MatCode;
+                    trayInfo.Qty = tray.CollectQty;
+                    trayInfo.StoreSiteNo = tray.StoreSite;
+                    trayInfo.InTaskItemid = tray.InTaskItemid;
+                    trayInfos[i] = trayInfo;
+                    i++;
+                }
+
+                ItemListInfo[] lsItems = new ItemListInfo[dicMtlQty.Count];
+                i = 0;
+                foreach (KeyValuePair<string, List<string>> mtl in dicMtlQty)
+                {
+                    ItemListInfo itemListInfo = new ItemListInfo();
+                    itemListInfo.MtlQty = new string[2];
+                    itemListInfo.InTaskItemid = mtl.Key;
+                    itemListInfo.MtlQty[0] = mtl.Value[0];
+                    itemListInfo.MtlQty[1] = mtl.Value[1];
+                    itemListInfo.MtlCode = mtl.Value[2];
+                    lsItems[i] = itemListInfo;
+                    i++;
+                }
+                #endregion
+
+                service.CommitUpTray(trayInfos, lsItems, User.Instance.UserData.UserId, taskNo, trayNo, filter,currentWeight,currentCapacity);
+                //Message.Alarm("成功", "提交成功");
+
+                BindingTrayCollectData.Instance.Collect = new List<BindingTray>();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                Message.Alarm("提示", ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 修改采集目标库位数据
+        /// </summary>
+        /// <param name="targetSite"></param>
+        private void UpdateCollect(string targetSite)
+        {
+            for (int i = 0;i< BindingTrayCollectData.Instance.Collect.Count;i++ )
+            {
+                if (BindingTrayCollectData.Instance.Collect[i] != null)
+                {
+                    BindingTrayCollectData.Instance.Collect[i].StoreSite = targetSite;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 提交组盘数据
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void commitButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //提交前校验
+                beforeCommit(false);
+
+                #region 校验是否有未完成的物料
+                string tmpMat = string.Empty;
+                decimal taskQty = 0;
+                decimal tmpQty = 0;
+                string msg = string.Empty;
+                string tmpStore = string.Empty;
+                for (int ii = 0; ii < detailListView.Items.Count; ii++)
+                {
+                    tmpMat = detailListView.Items[ii].SubItems[0].Text.Trim();//物料
+                    taskQty = Convert.ToDecimal(detailListView.Items[ii].SubItems[2].Text.Trim());
+                    tmpQty = Convert.ToDecimal(detailListView.Items[ii].SubItems[3].Text.Trim());
+                    tmpStore = detailListView.Items[ii].SubItems[1].Text.Trim();//库位
+
+                    if (taskQty != tmpQty)
+                    {
+                        msg += string.Format("、库位【{2}】物料【{0}】还剩【{1}】未做", tmpMat, (taskQty - tmpQty), tmpStore);
+                        break;
+                    }
+                }
+                if (!string.IsNullOrEmpty(msg))
+                {
+                    msg = msg.Remove(0, 1) + "，请确认是否提交？";
+                    if (MessageBox.Show(msg,
+                            "组盘采集", MessageBoxButtons.YesNo, MessageBoxIcon.Question,
+                            MessageBoxDefaultButton.Button2) != DialogResult.Yes)
+                    {
+                        return;
+                    }
+                }
+                #endregion
+
+                #region 取最大的物料数
+                Dictionary<string, decimal> dic = new Dictionary<string, decimal>();
+                decimal maxQty = 0;
+                string mtlCode = string.Empty;
+                foreach (BindingTray tray in BindingTrayCollectData.Instance.Collect)
+                {
+                    if (!dic.ContainsKey(tray.MatCode))
+                    {
+                        dic.Add(tray.MatCode, tray.CollectQty);
+                    }
+                    else
+                    {
+                        dic[tray.MatCode] += tray.CollectQty;
+                    }
+                    if (maxQty < dic[tray.MatCode])
+                    {
+                        mtlCode = tray.MatCode;
+                        maxQty = dic[tray.MatCode];
+                    }
+                }
+                #endregion
+                string targetSite = service.GetTargetSiteCode(storeRoom, mtlCode, maxQty);
+                if (string.IsNullOrEmpty(targetSite)) throw new Exception("组盘提交返回库位为空");
+                CheckSite(targetSite);
+                siteLabel.Text = targetSite;
+                UpdateCollect(targetSite);
+                storeSite = targetSite;
+                Message.Alarm("成功", "组盘提交成功");
+                InitializeCollect();
+                #region 旧逻辑
+                //BindingTrayInfo[] trayInfos = new BindingTrayInfo[BindingTrayCollectData.Instance.Collect.Count];   //托盘内货物信息
+                //int i=0;
+                //foreach (BindingTray tray in BindingTrayCollectData.Instance.Collect)
+                //{
+                //    BindingTrayInfo trayInfo = new BindingTrayInfo();   //这里转换没有转换托盘号
+                //    trayInfo.BatchNo = tray.BatchNo;
+                //    trayInfo.Sn = tray.StoreSite;
+                //    trayInfo.MatCode = tray.MatCode;
+                //    trayInfo.Qty = tray.CollectQty;
+                //    trayInfo.StoreSiteNo = tray.StoreSite;
+                //    trayInfo.InTaskItemid = tray.InTaskItemid;
+                //    trayInfos[i] = trayInfo;
+                //    i++;
+                //}
+
+                //service.CommitBindingTray(taskNo, trayNo, trayInfos);
+                ////Message.Alarm("成功", "提交成功");
+                //BindingTrayCollectData.Instance.Collect = new List<BindingTray>();
+                //InitializeCollect();
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                Message.Alarm("提示", ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 提交数据前校验
+        /// </summary>
+        /// <param name="checkSite">是否校验库位</param>
+        private void beforeCommit(bool checkSite)
+        {
+            if (trayNo.Equals(string.Empty))
+            {
+                throw new Exception("托盘数量为空，请确认");
+            }
+
+            if (BindingTrayCollectData.Instance.Collect.Count == 0)
+            {
+                throw new Exception("未采集物料明细，请确认");
+            }
+
+            if (checkSite && storeSite.Equals (string.Empty))
+            {
+                throw new Exception("库位为空，请确认");
+            }
+        }
+
+        private void collectItemButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BindingCollectDetailFrm detailFrm = new BindingCollectDetailFrm(storeRoom);
+                detailFrm.ShowDialog();
+                UpdateListViewItem(detailFrm.dicUpdateInfo, detailFrm.dicDeleteSeq);
+            }
+            catch (Exception ex)
+            {
+                Message.Alarm("提示", ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 更新组盘采集任务主界面数据
+        /// </summary>
+        private void UpdateListViewItem(Dictionary<string, string[]> dicUpdateInfo, Dictionary<string, string>  dicDeleteSeq)
+        {
+            string inTaskItemid =string.Empty;
+            string mtlCode = string.Empty;
+            for (int i = 0; i < detailListView.Items.Count; i++)
+            {
+                inTaskItemid = detailListView.Items[i].SubItems[8].Text.Trim();
+                mtlCode = detailListView.Items[i].SubItems[0].Text.Trim();//物料
+                if (dicUpdateInfo.ContainsKey(inTaskItemid))
+                {
+                    string[] updateInfo = dicUpdateInfo[inTaskItemid];
+                    if (updateInfo[0] == string.Empty)
+                    {
+                        detailListView.Items[i].SubItems[1].Text = updateInfo[1];
+                    }
+                    else
+                    {
+                        decimal dec = Convert.ToDecimal(dicMtlQty[inTaskItemid][1]);
+                        dicMtlQty[inTaskItemid][1] = (dec - Convert.ToDecimal(updateInfo[0])).ToString();
+
+                        //dicMtlWeight 第 一位 重 第二位容积
+                        //减去承重 物料 乘以 移除的数量
+                        //托盘容量得加上来
+                        currentWeight -= Convert.ToDecimal(dicMtlWeight[mtlCode][0]) * Convert.ToDecimal(updateInfo[0]);
+                        currentCapacity -= Convert.ToDecimal(dicMtlWeight[mtlCode][1]) * Convert.ToDecimal(updateInfo[0]);
+                        trayCapacity += Convert.ToDecimal(dicMtlWeight[mtlCode][1]) * Convert.ToDecimal(updateInfo[0]);
+                        lbTrayCapacity.Text = trayCapacity.ToString ();
+                        detailListView.Items[i].SubItems[3].Text = dicMtlQty[inTaskItemid][1];
+                        //if (updateInfo[2] != string.Empty && dicSeq.ContainsKey(updateInfo[2]))
+                        //    dicSeq.Remove(updateInfo[2]);
+                    }
+                }
+            }
+
+            foreach (string del in dicDeleteSeq.Values)
+            {
+                if (dicSeq.ContainsKey(del))
+                    dicSeq.Remove(del);
+            }
+ 
+            if (BindingTrayCollectData.Instance.Collect.Count == 0)
+            {
+                if (dicTryNoMtl.ContainsKey(trayLabel.Text.Trim()))
+                    dicTryNoMtl.Remove(trayLabel.Text.Trim());
+            }
+        }
+
+        private string GetSumQtyByMat(List<BindingTray> trays, string matCode, string batchNo, string sn)
+        {
+            decimal sumQty = 0;
+            foreach (BindingTray tray in trays)
+            {
+                if (tray.MatCode == matCode && tray.BatchNo == batchNo && tray.Sn == sn)
+                    sumQty += tray.CollectQty;
+            }
+            return sumQty.ToString();
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(string.Format("当前采集数量是{0},是否确认关闭？", BindingTrayCollectData.Instance.Collect.Count),
+                  "组盘采集", MessageBoxButtons.YesNo, MessageBoxIcon.Question,
+                  MessageBoxDefaultButton.Button2) != DialogResult.Yes)
+            {
+                return;
+            }
+            this.Close();
+        }
+
+        enum Step
+        {
+            TrayNo, _2DBarcode, Quantity, Site
+        }
+
+        private void detailListView_ColumnClick(object sender, ColumnClickEventArgs e)
+        {
+
+        } 
+    }
+}

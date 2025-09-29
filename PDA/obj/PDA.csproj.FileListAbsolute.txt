@@ -1,0 +1,655 @@
+E:\project\P100141\PdaCode\P100141PDA\PDA\bin\Debug\PDA.exe
+E:\project\P100141\PdaCode\P100141PDA\PDA\bin\Debug\PDA.pdb
+E:\project\P100141\PdaCode\P100141PDA\PDA\bin\Debug\BizLayer.dll
+E:\project\P100141\PdaCode\P100141PDA\PDA\bin\Debug\Entity.dll
+E:\project\P100141\PdaCode\P100141PDA\PDA\bin\Debug\Entity.pdb
+E:\project\P100141\PdaCode\P100141PDA\PDA\bin\Debug\BizLayer.pdb
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\ResolveAssemblyReference.cache
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.UpCollectDetailFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.InstallForm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.LoginFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.MainFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.PInventoryFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.Properties.Resources.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.BindingTrayFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.BindingDetailFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.UpTaskItemlFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.DownTaskItemFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.MergerTrayFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.DownCollectDetailFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.BindingCollectDetailFrm.resources
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.csproj.GenerateResource.Cache
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.exe
+E:\project\P100141\PdaCode\P100141PDA\PDA\obj\Debug\PDA.pdb
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\ResolveAssemblyReference.cache
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InstallForm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.LoginFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.MainFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.PInventoryFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.Properties.Resources.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.MergerTrayFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveProofFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TransferForm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.MtlSenderForm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ExceptTaskFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.csproj.GenerateResource.Cache
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\bin\Debug\PDA.exe
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\bin\Debug\PDA.pdb
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\bin\Debug\BizLayer.dll
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\bin\Debug\Entity.dll
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\bin\Debug\Entity.pdb
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\bin\Debug\BizLayer.pdb
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.exe
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.pdb
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveProofFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.QueryRepertoryFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ExceptCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\bin\Debug\App.cfg
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveProofFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveProofFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveProofFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHWmsToWcs.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHPalletItem.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveProofFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHCheckOrderPalletNo.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.SupplierCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.SupplierTaskFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.QueryCheckCollectDataFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveProofFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveProofFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveProofFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownCollectDetailFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveProofFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownTaskItemFrm.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayRepertory.resources
+D:\ZiQuanProjects\ZQWMS\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TransferFormBak.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\bin\Debug\App.cfg
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\bin\Debug\PDA.exe
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\bin\Debug\PDA.pdb
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\bin\Debug\BizLayer.dll
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\bin\Debug\Entity.dll
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\bin\Debug\Entity.pdb
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\bin\Debug\BizLayer.pdb
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\ResolveAssemblyReference.cache
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InstallForm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.LoginFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.MainFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.PInventoryFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.Properties.Resources.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.MergerTrayFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TransferForm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.MtlSenderForm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ExceptTaskFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.QueryRepertoryFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ExceptCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHWmsToWcs.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHPalletItem.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHCheckOrderPalletNo.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.SupplierCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.SupplierTaskFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.QueryCheckCollectDataFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayRepertory.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TransferFormBak.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.csproj.GenerateResource.Cache
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.exe
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.pdb
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\bin\Debug\BizLayer.dll
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\bin\Debug\Entity.dll
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\bin\Debug\Entity.pdb
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\bin\Debug\BizLayer.pdb
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\ResolveAssemblyReference.cache
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InstallForm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.LoginFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.MainFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.PInventoryFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.Properties.Resources.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.MergerTrayFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TransferForm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.MtlSenderForm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ExceptTaskFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.QueryRepertoryFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHDownCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ExceptCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHOutTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHWmsToWcs.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHPalletItem.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.ASWHCheckOrderPalletNo.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.SupplierCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.SupplierTaskFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.QueryCheckCollectDataFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveProofFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownTaskItemFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpCollectDetailFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TrayRepertory.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.TransferFormBak.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.csproj.GenerateResource.Cache
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.exe
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.pdb
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\bin\Debug\App.cfg
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\bin\Debug\PDA.exe
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\bin\Debug\PDA.pdb
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\PDA\bin\Debug\ICSHARPCODE.SHARPZIPLIB.DLL
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrm.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\bin\Debug\ICSHARPCODE.SHARPZIPLIB.DLL
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmRecv.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmCj.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmCjCollect.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmDtl.resources
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMa.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.DaoHuoSaoMa.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsUpReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsUpCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.InstallForm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.LoginFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.MainFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.PInventoryFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.PrintFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.Properties.Resources.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHUpFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHUpTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsUpTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsUpFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsDownFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsDownTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.MergerTrayFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsDownCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHUpCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsDownReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TransferForm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.MtlSenderForm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.InventoryTaskFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.InventoryTaskReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.InventoryTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.InventoryTaskDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ExceptTaskFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsDownReceiveProofFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsDownReceiveItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHDownFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHDownTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHDownReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHDownReceiveItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHDownReceiveProofFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHUpReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.QueryRepertoryFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHDownCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ExceptCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsUpReceiveItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.GoodsUpReceiveProofFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHUpReceiveItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHUpReceiveProofFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHInventoryTaskFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHInventoryTaskDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHInventoryTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHInventoryTaskReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHOutCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHOutFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHOutReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHOutReceiveItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHOutReceiveProofFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHOutTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHWmsToWcs.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHPalletItem.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHAllocateCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHAllocateFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHAllocateReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHAllocateReceiveItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHAllocateReceiveProofFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHAllocateTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.ASWHCheckOrderPalletNo.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.SupplierCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.SupplierTaskFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.QueryCheckCollectDataFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownReceiveItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownReceiveProofFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownUpFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownUpReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownUpReceiveItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownUpReceiveProofFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownUpTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpDownFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpReceiveItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpReceiveProofFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpDownCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpDownReceiveFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpDownReceiveItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpDownReceiveProofFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayUpDownTaskItemFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayDownUpCollectDetailFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TrayRepertory.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.TransferFormBak.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.DaoHuoSaoMaFrm.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmRecv.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmCj.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmCjCollect.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmDtl.resources
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.csproj.GenerateResource.Cache
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\bin\Debug\App.cfg
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\bin\Debug\PDA.exe
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\bin\Debug\PDA.pdb
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\bin\Debug\BizLayer.dll
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\bin\Debug\Entity.dll
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\bin\Debug\ICSHARPCODE.SHARPZIPLIB.DLL
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\bin\Debug\Entity.pdb
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\bin\Debug\BizLayer.pdb
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.exe
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\PDA\obj\Debug\PDA.pdb
+C:\worksapce\WMS\P100141PDA\PDA\bin\Debug\App.cfg
+C:\worksapce\WMS\P100141PDA\PDA\bin\Debug\PDA.exe
+C:\worksapce\WMS\P100141PDA\PDA\bin\Debug\PDA.pdb
+C:\worksapce\WMS\P100141PDA\PDA\bin\Debug\BizLayer.dll
+C:\worksapce\WMS\P100141PDA\PDA\bin\Debug\Entity.dll
+C:\worksapce\WMS\P100141PDA\PDA\bin\Debug\ICSHARPCODE.SHARPZIPLIB.DLL
+C:\worksapce\WMS\P100141PDA\PDA\bin\Debug\Entity.pdb
+C:\worksapce\WMS\P100141PDA\PDA\bin\Debug\BizLayer.pdb
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\ResolveAssemblyReference.cache
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMa.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.InstallForm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.LoginFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.MainFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.PInventoryFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.PrintFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.Properties.Resources.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.MergerTrayFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TransferForm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.MtlSenderForm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ExceptTaskFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.QueryRepertoryFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ExceptCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHWmsToWcs.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHPalletItem.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHCheckOrderPalletNo.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.SupplierCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.SupplierTaskFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.QueryCheckCollectDataFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownTaskItemFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpCollectDetailFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayRepertory.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TransferFormBak.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmRecv.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmCj.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmCjCollect.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmDtl.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.BeatASWHDownFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.BeatGoodsDownFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.BeatGoodsDownReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.BeatASWHDownReceiveProofFrm.resources
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.csproj.GenerateResource.Cache
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.exe
+C:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.pdb
+D:\worksapce\WMS\P100141PDA\PDA\bin\Debug\App.cfg
+D:\worksapce\WMS\P100141PDA\PDA\bin\Debug\PDA.exe
+D:\worksapce\WMS\P100141PDA\PDA\bin\Debug\PDA.pdb
+D:\worksapce\WMS\P100141PDA\PDA\bin\Debug\BizLayer.dll
+D:\worksapce\WMS\P100141PDA\PDA\bin\Debug\Entity.dll
+D:\worksapce\WMS\P100141PDA\PDA\bin\Debug\ICSHARPCODE.SHARPZIPLIB.DLL
+D:\worksapce\WMS\P100141PDA\PDA\bin\Debug\Entity.pdb
+D:\worksapce\WMS\P100141PDA\PDA\bin\Debug\BizLayer.pdb
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\ResolveAssemblyReference.cache
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMa.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.InstallForm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.LoginFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.MainFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.PInventoryFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.PrintFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.Properties.Resources.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.MergerTrayFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TransferForm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.MtlSenderForm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.InventoryTaskDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ExceptTaskFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsDownReceiveItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.QueryRepertoryFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHDownCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ExceptCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsUpReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHUpReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHInventoryTaskReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHOutTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHWmsToWcs.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHPalletItem.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHAllocateTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.ASWHCheckOrderPalletNo.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.SupplierCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.SupplierTaskFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.QueryCheckCollectDataFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayUpDownTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayDownUpCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TrayRepertory.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.TransferFormBak.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmRecv.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmCj.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmCjCollect.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.DaoHuoSaoMaFrmDtl.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.BeatASWHDownFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.BeatGoodsDownFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.BeatGoodsDownReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.BeatASWHDownReceiveProofFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsSignTaskItemFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.GoodsSignCollectDetailFrm.resources
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.csproj.GenerateResource.Cache
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.exe
+D:\worksapce\WMS\P100141PDA\PDA\obj\Debug\PDA.pdb

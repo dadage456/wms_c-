@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RecevieWMStasks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="taskID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="partDatas" type="tns:ArrayOfWMS_PartsDeliver" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWMS_PartsDeliver">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WMS_PartsDeliver" nillable="true" type="tns:WMS_PartsDeliver" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WMS_PartsDeliver">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ERPOrderID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DistributionMode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrganizationCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Warehouse" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sterrooutexitexitcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WorkCenterCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DistributionParty" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PalletCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Materials" type="tns:ArrayOfMaterial" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMaterial">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Material" nillable="true" type="tns:Material" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Material">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BatchNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VendorNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VendorName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RecevieWMStasksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecevieWMStasksResult" type="tns:AGVfeedBack" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AGVfeedBack">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PalletResult" type="tns:ArrayOfPartsDeliverRtn" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPartsDeliverRtn">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PartsDeliverRtn" nillable="true" type="tns:PartsDeliverRtn" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PartsDeliverRtn">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ERPOrderID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PalletCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MSG" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PalletOutReady">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pallet" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="portNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PalletOutReadyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PalletOutReadyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testWMScall">
+        <s:complexType />
+      </s:element>
+      <s:element name="testWMScallResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="testWMScallResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RecevieWMStasksSoapIn">
+    <wsdl:part name="parameters" element="tns:RecevieWMStasks" />
+  </wsdl:message>
+  <wsdl:message name="RecevieWMStasksSoapOut">
+    <wsdl:part name="parameters" element="tns:RecevieWMStasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="PalletOutReadySoapIn">
+    <wsdl:part name="parameters" element="tns:PalletOutReady" />
+  </wsdl:message>
+  <wsdl:message name="PalletOutReadySoapOut">
+    <wsdl:part name="parameters" element="tns:PalletOutReadyResponse" />
+  </wsdl:message>
+  <wsdl:message name="testWMScallSoapIn">
+    <wsdl:part name="parameters" element="tns:testWMScall" />
+  </wsdl:message>
+  <wsdl:message name="testWMScallSoapOut">
+    <wsdl:part name="parameters" element="tns:testWMScallResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AGVSrvSoap">
+    <wsdl:operation name="RecevieWMStasks">
+      <wsdl:input message="tns:RecevieWMStasksSoapIn" />
+      <wsdl:output message="tns:RecevieWMStasksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PalletOutReady">
+      <wsdl:input message="tns:PalletOutReadySoapIn" />
+      <wsdl:output message="tns:PalletOutReadySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testWMScall">
+      <wsdl:input message="tns:testWMScallSoapIn" />
+      <wsdl:output message="tns:testWMScallSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AGVSrvSoap" type="tns:AGVSrvSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RecevieWMStasks">
+      <soap:operation soapAction="http://tempuri.org/RecevieWMStasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PalletOutReady">
+      <soap:operation soapAction="http://tempuri.org/PalletOutReady" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testWMScall">
+      <soap:operation soapAction="http://tempuri.org/testWMScall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AGVSrvSoap12" type="tns:AGVSrvSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RecevieWMStasks">
+      <soap12:operation soapAction="http://tempuri.org/RecevieWMStasks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PalletOutReady">
+      <soap12:operation soapAction="http://tempuri.org/PalletOutReady" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testWMScall">
+      <soap12:operation soapAction="http://tempuri.org/testWMScall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AGVSrv">
+    <wsdl:port name="AGVSrvSoap" binding="tns:AGVSrvSoap">
+      <soap:address location="http://139.196.176.125:2580/tg_agv_webSrv4GoldenWind/AGVSrv.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AGVSrvSoap12" binding="tns:AGVSrvSoap12">
+      <soap12:address location="http://139.196.176.125:2580/tg_agv_webSrv4GoldenWind/AGVSrv.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

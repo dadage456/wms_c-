@@ -1,0 +1,31 @@
+This 'Tip of the Day' dialog is normally displayed when you start WinCE CAB Manager, but not if you are opening a CAB file.  You can disable this dialog by unchecking the 'Show Tips on StartUp' box below.
+If you turn the Tip of the Day off and later want to restore it, select Tip of the Day from the Help menu, then check the 'Show Tips on StartUp' box at the bottom of the dialog box.
+You should use the 'Check For Updates' entry on the Help menu frequently to automatically check for the latest updates to this program available from OCP Software.
+You can perform custom actions during installation by adding a "Custom Setup DLL" to your CAB files.
+You can add files to a CAB using the 'Cabinet / Files / Add...' menu item.
+Another way to add files to a CAB is by right-clicking the 'Files' node in the tree control, and selecting 'Add' from the popup menu.
+You can quickly extract files from a CAB by dragging the files from WinCE CAB Manager to any folder or Explorer window.
+You can quickly add files to a CAB by dragging the files from any folder or Explorer window onto WinCE CAB Manager.
+Make sure to read about some of the known Windows CE installation issues in the online Help!
+If you accidently disabled the "New Cabinet Wizard" at startup, you can re-enable it using the 'Wizards' tab available from the 'Tools / Options...' menu item.
+Every function in WinCE CAB Manager can be accessed using either a keyboard shortcut, a menu entry, or both.
+Be sure to check the OCP Software web site (http://www.ocpsoftware.com) for product updates, new Add-Ins and late-breaking information not found in the documentation.
+You can view the online Help for an Add-In using the 'Help / Add-Ins...' menu item.
+The file listing for a CAB can be quickly sorted by any of the fields displayed in the listing.  Just click on any column title to sort it.
+You can easily view files in a CAB file by dragging them to an application or a shortcut to an application.
+To display details about a currently open CAB file, select the 'Cabinet / Properties' menu item.
+Another way to display details about a currently open CAB file is to double-click the 'CAB Information' node in the "Tree View".
+The left-hand panel in the WinCE CAB Manager display (known as the "Tree View") displays all of the files, shortcuts, registry entries and other settings in the CAB file.
+The right-hand panel in the WinCE CAB Manager display (known as the "List View") displays all of the properties of the item currently selected in the left-hand ("Tree View") panel.
+You can create a shortcut to a file within a CAB by clicking on the file and dragging it onto the 'Shortcuts' node in the Tree View.
+You can copy files from one CAB file to another by opening each CAB, and dragging files from one to the other.
+To change the order in which the files in a CAB are installed, right-click on a file and choose either 'Move Up' or 'Move Down' to change the file's index - the lower the index, the earlier it is installed.
+WinCE CAB Manager exposes an OLE Automation interface which allows it to be manipulated from other programs, such as Visual Basic or even VB Script.
+You can use either Shift-F10 or the special context menu key on Windows keyboards to display a context menu for the currently selected item in a CAB file.
+WinCE CAB Manager uses "docking" toolbars - if you don't like where they are positioned by default, you can drag them anywhere you like.
+Pressing the F5 key will automatically arrange all of the columns in the list view so that you can more easily see all of the details at one time.
+WinCE CAB Manager now saves all of the settings for your CAB files in a project file, so that you can rebuild the CAB file quickly and easily any time the source files are modified.
+Since WinCE CAB Manager project files are simply XML-based text files, they work very well with source-control applications, and can be easily created or modified manually should the need arise.
+Incorrectly marking a file as self-registering when it is not can cause problems such as system lockups when the CAB file is installed or uninstalled.
+Most warning messages can be enabled or disabled using the "Warnings" tab on the "Program Options" dialog.
+When setting the name of a shortcut, the use of the ".LNK" file extension is optional, as it will be appended automatically if it is not provided.

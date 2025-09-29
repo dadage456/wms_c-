@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="agvtxws.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="agvtxws_agv2wmstx_tx" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://dspt.f3322.net:18080/jfsaptx/tx.asmx</Value>
+    </Setting>
+    <Setting Name="agvtxws_wms2agv_AGVSrv" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://139.196.176.125:2580/tg_agv_webSrv4GoldenWind/AGVSrv.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

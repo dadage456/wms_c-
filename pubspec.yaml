@@ -1,0 +1,68 @@
+name: goldwind_wms_app
+description: 金风WMS仓库管理系统移动端应用
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 状态管理
+  flutter_bloc: ^8.1.3
+  equatable: ^2.0.5
+
+  # 路由和依赖注入
+  flutter_modular: ^6.3.2
+
+  # 本地存储
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.1
+
+  # 网络请求
+  dio: ^5.3.2
+  retrofit: ^4.0.3
+  json_annotation: ^4.8.1
+
+  # UI组件
+  cupertino_icons: ^1.0.6
+  flutter_screenutil: ^5.9.0
+
+  # 工具类
+  logger: ^2.0.2+1
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # 代码生成
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+  retrofit_generator: ^8.0.4
+  json_serializable: ^6.7.1
+
+  # 代码质量
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # 资源文件
+  # assets:
+  #   - images/
+  #   - sounds/
+
+  # 字体配置
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic

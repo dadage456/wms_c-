@@ -1,0 +1,30 @@
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\agvtxws\bin\Debug\agvtxws.exe
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\agvtxws\bin\Debug\agvtxws.pdb
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\agvtxws\obj\Debug\ResolveAssemblyReference.cache
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\agvtxws\obj\Debug\agvtxws.exe
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\agvtxws\obj\Debug\agvtxws.pdb
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档_mod\P100141PDACode\P100141PDA\agvtxws\bin\Debug\agvtxws.exe.config
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\agvtxws\bin\Debug\agvtxws.exe.config
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\agvtxws\bin\Debug\agvtxws.exe
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\agvtxws\bin\Debug\agvtxws.pdb
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\agvtxws\obj\Debug\ResolveAssemblyReference.cache
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\agvtxws\obj\Debug\agvtxws.exe
+D:\BaiduYunDownload\仓储管理系统\源代码移交文档\P100141PDACode\P100141PDA\agvtxws\obj\Debug\agvtxws.pdb
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\agvtxws\bin\Debug\agvtxws.exe.config
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\agvtxws\bin\Debug\agvtxws.exe
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\agvtxws\bin\Debug\agvtxws.pdb
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\agvtxws\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\agvtxws\obj\Debug\agvtxws.exe
+C:\Users\cosco\Documents\WeChat Files\zhaobaohe001\Files\P100141PDA_back201808081116\P100141PDA_back201808081116\agvtxws\obj\Debug\agvtxws.pdb
+C:\worksapce\WMS\P100141PDA\agvtxws\bin\Debug\agvtxws.exe.config
+C:\worksapce\WMS\P100141PDA\agvtxws\bin\Debug\agvtxws.exe
+C:\worksapce\WMS\P100141PDA\agvtxws\bin\Debug\agvtxws.pdb
+C:\worksapce\WMS\P100141PDA\agvtxws\obj\Debug\ResolveAssemblyReference.cache
+C:\worksapce\WMS\P100141PDA\agvtxws\obj\Debug\agvtxws.exe
+C:\worksapce\WMS\P100141PDA\agvtxws\obj\Debug\agvtxws.pdb
+D:\worksapce\WMS\P100141PDA\agvtxws\bin\Debug\agvtxws.exe.config
+D:\worksapce\WMS\P100141PDA\agvtxws\bin\Debug\agvtxws.exe
+D:\worksapce\WMS\P100141PDA\agvtxws\bin\Debug\agvtxws.pdb
+D:\worksapce\WMS\P100141PDA\agvtxws\obj\Debug\ResolveAssemblyReference.cache
+D:\worksapce\WMS\P100141PDA\agvtxws\obj\Debug\agvtxws.exe
+D:\worksapce\WMS\P100141PDA\agvtxws\obj\Debug\agvtxws.pdb

@@ -1,0 +1,1116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E8F48FA-1135-47BE-99E8-1EC63909C945}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PDA</RootNamespace>
+    <AssemblyName>PDA</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.00</OSVersion>
+    <DeployDirSuffix>PDA</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+    <DeployDirPrefix>%25CSIDL_APPDATA%25</DeployDirPrefix>
+    <ApplicationIcon>imgico.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <StartupObject>PDA.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSHARPCODE.SHARPZIPLIB, Version=0.85.5.452, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ICSHARPCODE.SHARPZIPLIB.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsCE.Forms">
+      <HintPath>..\Libs\Microsoft.WindowsCE.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataGrid">
+      <HintPath>..\Libs\System.Windows.Forms.DataGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DaoHuoSaoMa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaoHuoSaoMa.Designer.cs">
+      <DependentUpon>DaoHuoSaoMa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsUpReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsUpReceiveFrm.designer.cs">
+      <DependentUpon>GoodsUpReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsUpCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsUpCollectDetailFrm.designer.cs">
+      <DependentUpon>GoodsUpCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HttpFileTrans.cs" />
+    <Compile Include="InstallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallForm.Designer.cs">
+      <DependentUpon>InstallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PInventoryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PInventoryFrm.designer.cs">
+      <DependentUpon>PInventoryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs" />
+    <Compile Include="PrintFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintFrm.designer.cs">
+      <DependentUpon>PrintFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DaoHuoSaoMa.resx">
+      <DependentUpon>DaoHuoSaoMa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsUpReceiveFrm.resx">
+      <DependentUpon>GoodsUpReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsUpCollectDetailFrm.resx">
+      <DependentUpon>GoodsUpCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InstallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PInventoryFrm.resx">
+      <DependentUpon>PInventoryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintFrm.resx">
+      <DependentUpon>PrintFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHUpFrm.resx">
+      <DependentUpon>ASWHUpFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHUpTaskItemFrm.resx">
+      <DependentUpon>ASWHUpTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsUpTaskItemFrm.resx">
+      <DependentUpon>GoodsUpTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsUpFrm.resx">
+      <DependentUpon>GoodsUpFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsDownFrm.resx">
+      <DependentUpon>GoodsDownFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsDownTaskItemFrm.resx">
+      <DependentUpon>GoodsDownTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MergerTrayFrm.resx">
+      <DependentUpon>MergerTrayFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsDownCollectDetailFrm.resx">
+      <DependentUpon>GoodsDownCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHUpCollectDetailFrm.resx">
+      <DependentUpon>ASWHUpCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsDownReceiveFrm.resx">
+      <DependentUpon>GoodsDownReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferForm.resx">
+      <DependentUpon>TransferForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MtlSenderForm.resx">
+      <DependentUpon>MtlSenderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryTaskFrm.resx">
+      <DependentUpon>InventoryTaskFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryTaskReceiveFrm.resx">
+      <DependentUpon>InventoryTaskReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryTaskItemFrm.resx">
+      <DependentUpon>InventoryTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryTaskDetailFrm.resx">
+      <DependentUpon>InventoryTaskDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExceptTaskFrm.resx">
+      <DependentUpon>ExceptTaskFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsDownReceiveProofFrm.resx">
+      <DependentUpon>GoodsDownReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsDownReceiveItemFrm.resx">
+      <DependentUpon>GoodsDownReceiveItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHDownFrm.resx">
+      <DependentUpon>ASWHDownFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHDownTaskItemFrm.resx">
+      <DependentUpon>ASWHDownTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHDownReceiveFrm.resx">
+      <DependentUpon>ASWHDownReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHDownReceiveItemFrm.resx">
+      <DependentUpon>ASWHDownReceiveItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHDownReceiveProofFrm.resx">
+      <DependentUpon>ASWHDownReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHUpReceiveFrm.resx">
+      <DependentUpon>ASWHUpReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryRepertoryFrm.resx">
+      <DependentUpon>QueryRepertoryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHDownCollectDetailFrm.resx">
+      <DependentUpon>ASWHDownCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExceptCollectDetailFrm.resx">
+      <DependentUpon>ExceptCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsUpReceiveItemFrm.resx">
+      <DependentUpon>GoodsUpReceiveItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsUpReceiveProofFrm.resx">
+      <DependentUpon>GoodsUpReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHUpReceiveItemFrm.resx">
+      <DependentUpon>ASWHUpReceiveItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHUpReceiveProofFrm.resx">
+      <DependentUpon>ASWHUpReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHInventoryTaskFrm.resx">
+      <DependentUpon>ASWHInventoryTaskFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHInventoryTaskDetailFrm.resx">
+      <DependentUpon>ASWHInventoryTaskDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHInventoryTaskItemFrm.resx">
+      <DependentUpon>ASWHInventoryTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHInventoryTaskReceiveFrm.resx">
+      <DependentUpon>ASWHInventoryTaskReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHOutCollectDetailFrm.resx">
+      <DependentUpon>ASWHOutCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHOutFrm.resx">
+      <DependentUpon>ASWHOutFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHOutReceiveFrm.resx">
+      <DependentUpon>ASWHOutReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHOutReceiveItemFrm.resx">
+      <DependentUpon>ASWHOutReceiveItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHOutReceiveProofFrm.resx">
+      <DependentUpon>ASWHOutReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHOutTaskItemFrm.resx">
+      <DependentUpon>ASWHOutTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHWmsToWcs.resx">
+      <DependentUpon>ASWHWmsToWcs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHPalletItem.resx">
+      <DependentUpon>ASWHPalletItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHAllocateCollectDetailFrm.resx">
+      <DependentUpon>ASWHAllocateCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHAllocateFrm.resx">
+      <DependentUpon>ASWHAllocateFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHAllocateReceiveFrm.resx">
+      <DependentUpon>ASWHAllocateReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHAllocateReceiveItemFrm.resx">
+      <DependentUpon>ASWHAllocateReceiveItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHAllocateReceiveProofFrm.resx">
+      <DependentUpon>ASWHAllocateReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHAllocateTaskItemFrm.resx">
+      <DependentUpon>ASWHAllocateTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASWHCheckOrderPalletNo.resx">
+      <DependentUpon>ASWHCheckOrderPalletNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierCollectDetailFrm.resx">
+      <DependentUpon>SupplierCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierTaskFrm.resx">
+      <DependentUpon>SupplierTaskFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryCheckCollectDataFrm.resx">
+      <DependentUpon>QueryCheckCollectDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownCollectDetailFrm.resx">
+      <DependentUpon>TrayDownCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownFrm.resx">
+      <DependentUpon>TrayDownFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownReceiveFrm.resx">
+      <DependentUpon>TrayDownReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownReceiveItemFrm.resx">
+      <DependentUpon>TrayDownReceiveItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownReceiveProofFrm.resx">
+      <DependentUpon>TrayDownReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownTaskItemFrm.resx">
+      <DependentUpon>TrayDownTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownUpFrm.resx">
+      <DependentUpon>TrayDownUpFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownUpReceiveFrm.resx">
+      <DependentUpon>TrayDownUpReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownUpReceiveItemFrm.resx">
+      <DependentUpon>TrayDownUpReceiveItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownUpReceiveProofFrm.resx">
+      <DependentUpon>TrayDownUpReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownUpTaskItemFrm.resx">
+      <DependentUpon>TrayDownUpTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpCollectDetailFrm.resx">
+      <DependentUpon>TrayUpCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpDownFrm.resx">
+      <DependentUpon>TrayUpDownFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpFrm.resx">
+      <DependentUpon>TrayUpFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpReceiveFrm.resx">
+      <DependentUpon>TrayUpReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpReceiveItemFrm.resx">
+      <DependentUpon>TrayUpReceiveItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpReceiveProofFrm.resx">
+      <DependentUpon>TrayUpReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpTaskItemFrm.resx">
+      <DependentUpon>TrayUpTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpDownCollectDetailFrm.resx">
+      <DependentUpon>TrayUpDownCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpDownReceiveFrm.resx">
+      <DependentUpon>TrayUpDownReceiveFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpDownReceiveItemFrm.resx">
+      <DependentUpon>TrayUpDownReceiveItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpDownReceiveProofFrm.resx">
+      <DependentUpon>TrayUpDownReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayUpDownTaskItemFrm.resx">
+      <DependentUpon>TrayUpDownTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayDownUpCollectDetailFrm.resx">
+      <DependentUpon>TrayDownUpCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayRepertory.resx">
+      <DependentUpon>TrayRepertory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferFormBak.resx">
+      <DependentUpon>TransferFormBak.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaoHuoSaoMaFrm.resx">
+      <DependentUpon>DaoHuoSaoMaFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaoHuoSaoMaFrmRecv.resx">
+      <DependentUpon>DaoHuoSaoMaFrmRecv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaoHuoSaoMaFrmCj.resx">
+      <DependentUpon>DaoHuoSaoMaFrmCj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaoHuoSaoMaFrmCjCollect.resx">
+      <DependentUpon>DaoHuoSaoMaFrmCjCollect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaoHuoSaoMaFrmDtl.resx">
+      <DependentUpon>DaoHuoSaoMaFrmDtl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeatASWHDownFrm.resx">
+      <DependentUpon>BeatASWHDownFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeatGoodsDownFrm.resx">
+      <DependentUpon>BeatGoodsDownFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeatGoodsDownReceiveProofFrm.resx">
+      <DependentUpon>BeatGoodsDownReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeatASWHDownReceiveProofFrm.resx">
+      <DependentUpon>BeatASWHDownReceiveProofFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsSignTaskItemFrm.resx">
+      <DependentUpon>GoodsSignTaskItemFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsSignCollectDetailFrm.resx">
+      <DependentUpon>GoodsSignCollectDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ASWHUpFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHUpFrm.Designer.cs">
+      <DependentUpon>ASWHUpFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHUpTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHUpTaskItemFrm.Designer.cs">
+      <DependentUpon>ASWHUpTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsUpTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsUpTaskItemFrm.Designer.cs">
+      <DependentUpon>GoodsUpTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsUpFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsUpFrm.Designer.cs">
+      <DependentUpon>GoodsUpFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsDownFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsDownFrm.Designer.cs">
+      <DependentUpon>GoodsDownFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsDownTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsDownTaskItemFrm.Designer.cs">
+      <DependentUpon>GoodsDownTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MergerTrayFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MergerTrayFrm.Designer.cs">
+      <DependentUpon>MergerTrayFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsDownCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsDownCollectDetailFrm.designer.cs">
+      <DependentUpon>GoodsDownCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHUpCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHUpCollectDetailFrm.designer.cs">
+      <DependentUpon>ASWHUpCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsDownReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsDownReceiveFrm.designer.cs">
+      <DependentUpon>GoodsDownReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferForm.Designer.cs">
+      <DependentUpon>TransferForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MtlSenderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MtlSenderForm.Designer.cs">
+      <DependentUpon>MtlSenderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryTaskFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryTaskFrm.Designer.cs">
+      <DependentUpon>InventoryTaskFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryTaskReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryTaskReceiveFrm.designer.cs">
+      <DependentUpon>InventoryTaskReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryTaskItemFrm.Designer.cs">
+      <DependentUpon>InventoryTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryTaskDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryTaskDetailFrm.designer.cs">
+      <DependentUpon>InventoryTaskDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptTaskFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptTaskFrm.Designer.cs">
+      <DependentUpon>ExceptTaskFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsDownReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsDownReceiveProofFrm.designer.cs">
+      <DependentUpon>GoodsDownReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsDownReceiveItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsDownReceiveItemFrm.designer.cs">
+      <DependentUpon>GoodsDownReceiveItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHDownFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHDownFrm.Designer.cs">
+      <DependentUpon>ASWHDownFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHDownTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHDownTaskItemFrm.Designer.cs">
+      <DependentUpon>ASWHDownTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHDownReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHDownReceiveFrm.designer.cs">
+      <DependentUpon>ASWHDownReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHDownReceiveItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHDownReceiveItemFrm.designer.cs">
+      <DependentUpon>ASWHDownReceiveItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHDownReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHDownReceiveProofFrm.designer.cs">
+      <DependentUpon>ASWHDownReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHUpReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHUpReceiveFrm.designer.cs">
+      <DependentUpon>ASWHUpReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryRepertoryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryRepertoryFrm.Designer.cs">
+      <DependentUpon>QueryRepertoryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHDownCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHDownCollectDetailFrm.designer.cs">
+      <DependentUpon>ASWHDownCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptCollectDetailFrm.designer.cs">
+      <DependentUpon>ExceptCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsUpReceiveItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsUpReceiveItemFrm.designer.cs">
+      <DependentUpon>GoodsUpReceiveItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsUpReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsUpReceiveProofFrm.designer.cs">
+      <DependentUpon>GoodsUpReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHUpReceiveItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHUpReceiveItemFrm.designer.cs">
+      <DependentUpon>ASWHUpReceiveItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHUpReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHUpReceiveProofFrm.designer.cs">
+      <DependentUpon>ASWHUpReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHInventoryTaskFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHInventoryTaskFrm.Designer.cs">
+      <DependentUpon>ASWHInventoryTaskFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHInventoryTaskDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHInventoryTaskDetailFrm.designer.cs">
+      <DependentUpon>ASWHInventoryTaskDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHInventoryTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHInventoryTaskItemFrm.Designer.cs">
+      <DependentUpon>ASWHInventoryTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHInventoryTaskReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHInventoryTaskReceiveFrm.designer.cs">
+      <DependentUpon>ASWHInventoryTaskReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHOutCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHOutCollectDetailFrm.designer.cs">
+      <DependentUpon>ASWHOutCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHOutFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHOutFrm.Designer.cs">
+      <DependentUpon>ASWHOutFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHOutReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHOutReceiveFrm.designer.cs">
+      <DependentUpon>ASWHOutReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHOutReceiveItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHOutReceiveItemFrm.designer.cs">
+      <DependentUpon>ASWHOutReceiveItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHOutReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHOutReceiveProofFrm.designer.cs">
+      <DependentUpon>ASWHOutReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHOutTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHOutTaskItemFrm.Designer.cs">
+      <DependentUpon>ASWHOutTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHWmsToWcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHWmsToWcs.designer.cs">
+      <DependentUpon>ASWHWmsToWcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHPalletItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHPalletItem.designer.cs">
+      <DependentUpon>ASWHPalletItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHAllocateCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHAllocateCollectDetailFrm.designer.cs">
+      <DependentUpon>ASWHAllocateCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHAllocateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHAllocateFrm.Designer.cs">
+      <DependentUpon>ASWHAllocateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHAllocateReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHAllocateReceiveFrm.designer.cs">
+      <DependentUpon>ASWHAllocateReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHAllocateReceiveItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHAllocateReceiveItemFrm.designer.cs">
+      <DependentUpon>ASWHAllocateReceiveItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHAllocateReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHAllocateReceiveProofFrm.designer.cs">
+      <DependentUpon>ASWHAllocateReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHAllocateTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHAllocateTaskItemFrm.Designer.cs">
+      <DependentUpon>ASWHAllocateTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASWHCheckOrderPalletNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASWHCheckOrderPalletNo.designer.cs">
+      <DependentUpon>ASWHCheckOrderPalletNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierCollectDetailFrm.designer.cs">
+      <DependentUpon>SupplierCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierTaskFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierTaskFrm.Designer.cs">
+      <DependentUpon>SupplierTaskFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryCheckCollectDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryCheckCollectDataFrm.designer.cs">
+      <DependentUpon>QueryCheckCollectDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownCollectDetailFrm.designer.cs">
+      <DependentUpon>TrayDownCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownFrm.Designer.cs">
+      <DependentUpon>TrayDownFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownReceiveFrm.designer.cs">
+      <DependentUpon>TrayDownReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownReceiveItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownReceiveItemFrm.designer.cs">
+      <DependentUpon>TrayDownReceiveItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownReceiveProofFrm.designer.cs">
+      <DependentUpon>TrayDownReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownTaskItemFrm.Designer.cs">
+      <DependentUpon>TrayDownTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownUpFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownUpFrm.Designer.cs">
+      <DependentUpon>TrayDownUpFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownUpReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownUpReceiveFrm.designer.cs">
+      <DependentUpon>TrayDownUpReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownUpReceiveItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownUpReceiveItemFrm.designer.cs">
+      <DependentUpon>TrayDownUpReceiveItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownUpReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownUpReceiveProofFrm.designer.cs">
+      <DependentUpon>TrayDownUpReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownUpTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownUpTaskItemFrm.Designer.cs">
+      <DependentUpon>TrayDownUpTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpCollectDetailFrm.designer.cs">
+      <DependentUpon>TrayUpCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpDownFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpDownFrm.Designer.cs">
+      <DependentUpon>TrayUpDownFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpFrm.Designer.cs">
+      <DependentUpon>TrayUpFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpReceiveFrm.designer.cs">
+      <DependentUpon>TrayUpReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpReceiveItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpReceiveItemFrm.designer.cs">
+      <DependentUpon>TrayUpReceiveItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpReceiveProofFrm.designer.cs">
+      <DependentUpon>TrayUpReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpTaskItemFrm.Designer.cs">
+      <DependentUpon>TrayUpTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpDownCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpDownCollectDetailFrm.designer.cs">
+      <DependentUpon>TrayUpDownCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpDownReceiveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpDownReceiveFrm.designer.cs">
+      <DependentUpon>TrayUpDownReceiveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpDownReceiveItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpDownReceiveItemFrm.designer.cs">
+      <DependentUpon>TrayUpDownReceiveItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpDownReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpDownReceiveProofFrm.designer.cs">
+      <DependentUpon>TrayUpDownReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayUpDownTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayUpDownTaskItemFrm.Designer.cs">
+      <DependentUpon>TrayUpDownTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayDownUpCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayDownUpCollectDetailFrm.designer.cs">
+      <DependentUpon>TrayDownUpCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayRepertory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayRepertory.designer.cs">
+      <DependentUpon>TrayRepertory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferFormBak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferFormBak.Designer.cs">
+      <DependentUpon>TransferFormBak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaoHuoSaoMaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaoHuoSaoMaFrm.Designer.cs">
+      <DependentUpon>DaoHuoSaoMaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaoHuoSaoMaFrmRecv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaoHuoSaoMaFrmRecv.designer.cs">
+      <DependentUpon>DaoHuoSaoMaFrmRecv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaoHuoSaoMaFrmCj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaoHuoSaoMaFrmCj.Designer.cs">
+      <DependentUpon>DaoHuoSaoMaFrmCj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaoHuoSaoMaFrmCjCollect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaoHuoSaoMaFrmCjCollect.designer.cs">
+      <DependentUpon>DaoHuoSaoMaFrmCjCollect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaoHuoSaoMaFrmDtl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaoHuoSaoMaFrmDtl.designer.cs">
+      <DependentUpon>DaoHuoSaoMaFrmDtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeatASWHDownFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeatASWHDownFrm.Designer.cs">
+      <DependentUpon>BeatASWHDownFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeatGoodsDownFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeatGoodsDownFrm.Designer.cs">
+      <DependentUpon>BeatGoodsDownFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeatGoodsDownReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeatGoodsDownReceiveProofFrm.designer.cs">
+      <DependentUpon>BeatGoodsDownReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeatASWHDownReceiveProofFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeatASWHDownReceiveProofFrm.designer.cs">
+      <DependentUpon>BeatASWHDownReceiveProofFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsSignTaskItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsSignTaskItemFrm.Designer.cs">
+      <DependentUpon>GoodsSignTaskItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsSignCollectDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsSignCollectDetailFrm.designer.cs">
+      <DependentUpon>GoodsSignCollectDetailFrm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BizLayer\BizLayer.csproj">
+      <Project>{3376D8F3-EE76-48F1-AF5C-6C90415B7811}</Project>
+      <Name>BizLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{D8BB6EA2-59FD-436D-9E7B-A7EC2471DF0B}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imgico.ico" />
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

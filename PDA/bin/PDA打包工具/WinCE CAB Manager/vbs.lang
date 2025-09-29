@@ -1,0 +1,139 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; vbs.lang : VBScript language definition file for WinCE CAB Manager.
+;;
+;; Copyright © 2005-2006 OCP Software, Inc.
+;;
+;; All Rights Reserved.
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Language]
+Name=VBScript
+CaseSensitive=false
+EscapeChar=
+Terminator=
+
+[Keywords]
+Item0=Empty
+Item1=False
+Item2=Nothing
+Item3=Null
+Item4=True
+Item5=Set
+Item6=Call
+Item7=Public
+Item8=Private
+Item9=Const
+Item10=Dim
+Item11=Erase
+Item12=Execute
+Item13=ExecuteGlobal
+Item14=Each
+Item15=In
+Item16=To
+Item17=Step
+Item18=Default
+Item19=MsgBox
+Item20=GetRef
+Item21=Stop
+Item22=New
+Item23=On
+Item24=Error
+Item25=Resume
+Item26=Goto
+Item27=ReDim
+Item28=Option
+Item29=IncludeScript
+Item30=alert
+Item31=confirm
+Item32=prompt
+Item33=Explicit
+Item34=Randomize
+Item35=Preserve
+Item36=Case
+Item37=Application
+Item38=CeCabinetMgr
+
+[Operators]
+Item0="^"
+Item0="-"
+Item0="*"
+Item0="/"
+Item0="\"
+Item0="+"
+Item0="&"
+Item0="="
+Item0="<>"
+Item0="<"
+Item0=">"
+Item0="<="
+Item0=">="
+Item0=Mod
+Item0=And
+Item0=Not
+Item0=Or
+Item0=Xor
+
+[SingleLineComments]
+Item0="'"
+Item1=Rem
+
+[MultiLineComments1]
+Item0=
+
+[MultiLineComments2]
+Item0=
+
+[ScopeKeywords1]
+Item0=Begin
+Item1=While
+Item2=For
+Item3=Do
+Item4=With
+Item5=Function
+Item6=Sub
+Item7=Class
+Item8=Do
+Item9="Do Until"
+Item10=Do
+Item11=For
+Item12=Function
+Item13=Property
+Item14=Sub
+Item15="Property Get"
+Item16="Property Let"
+Item17="Property Set"
+Item18="Select Case"
+Item19=If
+Item20=Then
+Item21=Else
+Item22=ElseIf
+
+[ScopeKeywords2]
+Item0=End
+Item1=Wend
+Item2=Next
+Item3=Loop
+Item4="End With"
+Item5="End Function
+Item6="End Sub"
+Item7="End Class"
+Item8="Exit Do"
+Item9=Loop
+Item10="Loop Until"
+Item11="Exit For"
+Item12="Exit Function"
+Item13="Exit Property"
+Item14="Exit Sub"
+Item15="End Property"
+Item16="End Property"
+Item17="End Property"
+Item18="End Select"
+Item19="End If"
+Item20="End If"
+Item21="End If"
+Item22="End If"
+
+[StringDelims]
+Item0="""
