@@ -138,6 +138,7 @@ class _OutboundCollectionViewState extends State<_OutboundCollectionView> {
           bloc.add(
             OutboundCollectionPendingActionConfirmed(confirmed ?? false),
           );
+
         }
         if (state.shouldClose) {
           if (Navigator.of(context).canPop()) {
@@ -165,6 +166,7 @@ class _OutboundCollectionViewState extends State<_OutboundCollectionView> {
           }
           if (!mounted) return;
           bloc.add(const OutboundCollectionNavigationCleared());
+
         }
       },
       child: BlocBuilder<OutboundCollectionBloc, OutboundCollectionState>(
