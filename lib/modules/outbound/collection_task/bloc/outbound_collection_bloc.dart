@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math' as math;
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
@@ -59,6 +60,7 @@ class OutboundCollectionBloc
     on<OutboundCollectionSupplierOpened>(_onSupplierOpened);
     on<OutboundCollectionNavigationCleared>(_onNavigationCleared);
     on<OutboundCollectionCloseAcknowledged>(_onCloseAcknowledged);
+    on<OutboundCollectionRecordDeleted>(_onRecordDeleted);
 
     add(const _OutboundCollectionInitialized());
   }
@@ -196,13 +198,84 @@ class OutboundCollectionBloc
         taskComment: taskComment,
       );
       final List<OutboundCollectionRecord> local = _localBox!.values.toList();
+
+      final Map<String, OutboundTaskItem> itemLookup = <String, OutboundTaskItem>{
+        for (final OutboundTaskItem item in items) item.outTaskItemId: item,
+      };
+      final Map<String, double> collectedDelta = <String, double>{};
+      final Set<String> serialManagedItems = <String>{};
+      final Map<String, OutboundCollectedSummary> summaries =
+          <String, OutboundCollectedSummary>{};
+      final Map<String, double> reserved = <String, double>{};
+      final Map<String, String> serials = <String, String>{};
+
+      for (final OutboundCollectionRecord record in local) {
+        final OutboundTaskItem? baseItem =
+            itemLookup[record.outTaskItemId];
+        if (baseItem == null) {
+          continue;
+        }
+
+        final OutboundCollectedSummary summary = summaries.putIfAbsent(
+          record.outTaskItemId,
+          () => OutboundCollectedSummary(
+            originalCollectedQty: baseItem.collectedQty,
+            currentCollectedQty: baseItem.collectedQty,
+            matCode: baseItem.matCode,
+          ),
+        );
+
+        summaries[record.outTaskItemId] = summary.copyWith(
+          currentCollectedQty: summary.currentCollectedQty + record.collectQty,
+        );
+
+        collectedDelta[record.outTaskItemId] =
+            (collectedDelta[record.outTaskItemId] ?? 0) + record.collectQty;
+
+        final String inventoryKey = record.sn.isEmpty
+            ? '${record.storeSite}${record.matCode}${record.batchNo}'
+            : '${record.storeSite}${record.matCode}${record.sn}';
+        reserved[inventoryKey] =
+            (reserved[inventoryKey] ?? 0) + record.collectQty;
+
+        if (record.sn.isNotEmpty) {
+          serialManagedItems.add(record.outTaskItemId);
+          serials['${record.matCode}@${record.sn}'] =
+              '${record.matCode}@${record.sn}';
+        }
+      }
+
+      final List<OutboundTaskItem> updatedItems = items.map(
+        (OutboundTaskItem item) {
+          final double delta = collectedDelta[item.outTaskItemId] ?? 0;
+          if (delta == 0) {
+            return item;
+          }
+          final bool serialManaged =
+              serialManagedItems.contains(item.outTaskItemId);
+          final double newCollected = item.collectedQty + delta;
+          final double newRepertory = serialManaged
+              ? 0
+              : math.max(item.repertoryQty - delta, 0);
+          return item.copyWith(
+            collectedQty: newCollected,
+            repertoryQty: newRepertory,
+          );
+        },
+      ).toList();
+
       emit(state.copyWith(
         status: OutboundCollectionStatus.ready,
-        taskItems: items,
-        filteredItems: items,
+        taskItems: updatedItems,
+        filteredItems:
+            _queryTask(state.storeSite, state.matCode, items: updatedItems),
         roomMatControl: roomMatControl,
         collectionRecords: local,
+        collectedSummary: summaries,
+        reservedInventory: reserved,
+        scannedSerials: serials,
         messageLabel: '请扫描库位',
+        selectedItemIds: <String>{},
       ));
     } catch (error) {
       emit(state.copyWith(
@@ -744,6 +817,7 @@ class OutboundCollectionBloc
       sn: '',
       quantityInput: null,
       inventoryQty: 0,
+      erpRoom: '',
       erpStoreInv: '',
       messageLabel: '请扫描库位',
     ));
@@ -993,4 +1067,132 @@ class OutboundCollectionBloc
     if (state.shouldClose) {
       emit(state.copyWith(shouldClose: false));
     }
+  }
+
+  Future<void> _onRecordDeleted(
+    OutboundCollectionRecordDeleted event,
+    Emitter<OutboundCollectionState> emit,
+  ) async {
+    await _deleteCollectionRecord(event.record, emit);
+  }
+
+  Future<void> _deleteCollectionRecord(
+    OutboundCollectionRecord record,
+    Emitter<OutboundCollectionState> emit,
+  ) async {
+    final List<OutboundCollectionRecord> updatedRecords =
+        List<OutboundCollectionRecord>.from(state.collectionRecords);
+    int index = updatedRecords.indexWhere(
+        (OutboundCollectionRecord element) => identical(element, record));
+    if (index == -1 && record.key != null) {
+      index = updatedRecords.indexWhere(
+          (OutboundCollectionRecord element) => element.key == record.key);
+    }
+    if (index == -1) {
+      index = updatedRecords.indexOf(record);
+    }
+    if (index == -1) {
+      return;
+    }
+    final OutboundCollectionRecord removed = updatedRecords.removeAt(index);
+
+    final Box<OutboundCollectionRecord> box =
+        _localBox ??= await _localBoxFuture;
+    if (removed.isInBox) {
+      await removed.delete();
+    } else if (removed.key != null) {
+      await box.delete(removed.key);
+    } else {
+      final int hiveIndex = box.values.toList().indexOf(removed);
+      if (hiveIndex != -1) {
+        await box.deleteAt(hiveIndex);
+      }
+    }
+
+    final Map<String, OutboundCollectedSummary> summaries =
+        Map<String, OutboundCollectedSummary>.from(state.collectedSummary);
+    final OutboundCollectedSummary? previousSummary =
+        summaries[removed.outTaskItemId];
+
+    double? updatedCollectedForSummary;
+    final List<OutboundTaskItem> updatedItems = state.taskItems.map(
+      (OutboundTaskItem item) {
+        if (item.outTaskItemId != removed.outTaskItemId) {
+          return item;
+        }
+        final double baseline = previousSummary?.originalCollectedQty ?? 0;
+        double newCollected = item.collectedQty - removed.collectQty;
+        if (newCollected < baseline) {
+          newCollected = baseline;
+        }
+        updatedCollectedForSummary = newCollected;
+        final double newRepertory = removed.sn.isNotEmpty
+            ? item.repertoryQty
+            : math.max(item.repertoryQty + removed.collectQty, 0);
+        return item.copyWith(
+          collectedQty: newCollected,
+          repertoryQty: newRepertory,
+        );
+      },
+    ).toList();
+
+    if (previousSummary != null) {
+      final double baseline = previousSummary.originalCollectedQty;
+      final double newCollected =
+          updatedCollectedForSummary ?? previousSummary.currentCollectedQty;
+      if ((newCollected - baseline).abs() < 0.000001) {
+        summaries.remove(removed.outTaskItemId);
+      } else {
+        summaries[removed.outTaskItemId] =
+            previousSummary.copyWith(currentCollectedQty: newCollected);
+      }
+    }
+
+    final Map<String, double> reserved =
+        Map<String, double>.from(state.reservedInventory);
+    final String inventoryKey = removed.sn.isEmpty
+        ? '${removed.storeSite}${removed.matCode}${removed.batchNo}'
+        : '${removed.storeSite}${removed.matCode}${removed.sn}';
+    final double? reservedQty = reserved[inventoryKey];
+    if (reservedQty != null) {
+      final double updatedQty = reservedQty - removed.collectQty;
+      if (updatedQty <= 0.000001) {
+        reserved.remove(inventoryKey);
+      } else {
+        reserved[inventoryKey] = updatedQty;
+      }
+    }
+
+    final Map<String, String> serials =
+        Map<String, String>.from(state.scannedSerials);
+    if (removed.sn.isNotEmpty) {
+      serials.remove('${removed.matCode}@${removed.sn}');
+    }
+
+    double inventoryQty = state.inventoryQty;
+    final bool matchesSite =
+        state.storeSite.isNotEmpty && state.storeSite == removed.storeSite;
+    final bool matchesMat =
+        state.matCode.isNotEmpty && state.matCode == removed.matCode;
+    final bool matchesBatch =
+        state.batchNo.isNotEmpty && state.batchNo == removed.batchNo;
+    final bool matchesSn =
+        state.sn.isNotEmpty && state.sn == removed.sn && removed.sn.isNotEmpty;
+    if (matchesSite && matchesMat) {
+      final bool matchKey = removed.sn.isNotEmpty ? matchesSn : matchesBatch;
+      if (matchKey || (!removed.sn.isNotEmpty && state.batchNo.isEmpty)) {
+        inventoryQty += removed.collectQty;
+      }
+    }
+
+    emit(state.copyWith(
+      taskItems: updatedItems,
+      filteredItems:
+          _queryTask(state.storeSite, state.matCode, items: updatedItems),
+      collectionRecords: updatedRecords,
+      collectedSummary: summaries,
+      reservedInventory: reserved,
+      scannedSerials: serials,
+      inventoryQty: inventoryQty,
+    ));
   }

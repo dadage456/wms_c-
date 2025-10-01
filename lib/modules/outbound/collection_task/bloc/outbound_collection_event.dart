@@ -77,3 +77,12 @@ class OutboundCollectionNavigationCleared extends OutboundCollectionEvent {
 class OutboundCollectionCloseAcknowledged extends OutboundCollectionEvent {
   const OutboundCollectionCloseAcknowledged();
 }
+
+class OutboundCollectionRecordDeleted extends OutboundCollectionEvent {
+  const OutboundCollectionRecordDeleted(this.record);
+
+  final OutboundCollectionRecord record;
+
+  @override
+  List<Object?> get props => <Object?>[record];
+}

@@ -98,22 +98,20 @@ class _OutboundCollectionViewState extends State<_OutboundCollectionView> {
           previous.shouldClose != current.shouldClose ||
           previous.navigationTarget != current.navigationTarget,
       listener: (BuildContext context, OutboundCollectionState state) async {
+        final OutboundCollectionBloc bloc =
+            context.read<OutboundCollectionBloc>();
         final messenger = ScaffoldMessenger.of(context);
         if (state.errorMessage != null) {
           messenger.showSnackBar(
             SnackBar(content: Text(state.errorMessage!)),
           );
-          context
-              .read<OutboundCollectionBloc>()
-              .add(const OutboundCollectionErrorCleared());
+          bloc.add(const OutboundCollectionErrorCleared());
         }
         if (state.successMessage != null) {
           messenger.showSnackBar(
             SnackBar(content: Text(state.successMessage!)),
           );
-          context
-              .read<OutboundCollectionBloc>()
-              .add(const OutboundCollectionSuccessCleared());
+          bloc.add(const OutboundCollectionSuccessCleared());
         }
         if (state.pendingAction != OutboundPendingAction.none &&
             state.pendingMessage != null) {
@@ -137,35 +135,38 @@ class _OutboundCollectionViewState extends State<_OutboundCollectionView> {
             },
           );
           if (!mounted) return;
-          context.read<OutboundCollectionBloc>().add(
-                OutboundCollectionPendingActionConfirmed(confirmed ?? false),
-              );
+          bloc.add(
+            OutboundCollectionPendingActionConfirmed(confirmed ?? false),
+          );
+
         }
         if (state.shouldClose) {
           if (Navigator.of(context).canPop()) {
             Navigator.of(context).pop();
           }
           if (!mounted) return;
-          context
-              .read<OutboundCollectionBloc>()
-              .add(const OutboundCollectionCloseAcknowledged());
+          bloc.add(const OutboundCollectionCloseAcknowledged());
         }
         if (state.navigationTarget != null) {
+          final Map<String, dynamic> args = <String, dynamic>{};
+          if (state.navigationArguments != null) {
+            args.addAll(state.navigationArguments!);
+          }
+          args['bloc'] = bloc;
           switch (state.navigationTarget!) {
             case OutboundNavigation.detail:
-              Modular.to.pushNamed('./detail', arguments: state.navigationArguments);
+              await Modular.to.pushNamed('./detail', arguments: args);
               break;
             case OutboundNavigation.exception:
-              Modular.to.pushNamed('./exception', arguments: state.navigationArguments);
+              Modular.to.pushNamed('./exception', arguments: args);
               break;
             case OutboundNavigation.supplier:
-              Modular.to.pushNamed('./supplier', arguments: state.navigationArguments);
+              Modular.to.pushNamed('./supplier', arguments: args);
               break;
           }
           if (!mounted) return;
-          context
-              .read<OutboundCollectionBloc>()
-              .add(const OutboundCollectionNavigationCleared());
+          bloc.add(const OutboundCollectionNavigationCleared());
+
         }
       },
       child: BlocBuilder<OutboundCollectionBloc, OutboundCollectionState>(
